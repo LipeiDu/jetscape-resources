@@ -1,0 +1,70 @@
+{
+  "study": "D. Everett et al., Phys. Rev. C 103, 054904 (2021)",
+  "paper_url": "https://arxiv.org/abs/2011.01430",
+  "case": "Local full-data Grad reconstruction, combined Pb-Pb 2.76 TeV and Au-Au 200 GeV",
+  "source_kind": "Local posterior rerun using the study code and saved emulators",
+  "shape": [
+    9127,
+    18
+  ],
+  "representation": "importance_weighted",
+  "sampler": "PoCoMC 1.2.6",
+  "seed": 2026091851,
+  "include_model_discrepancy": false,
+  "importance_weight_ess": 8461.837772176745,
+  "archive_sha256": "d934caa9102571b0741d61d2ff98087c2fab1b111784ca3ccb12d13ce78fd428",
+  "parent_chain_sha256": "f3e92aa0308d9edab0cd722e8ac94611ed7ffda88669a441b4393aef95b97cc9",
+  "source_code_revision": "4358e24665c2ea1574f36464ea3ad7a105883b78",
+  "likelihood_observables": {
+    "Pb-Pb-2760": 110,
+    "Au-Au-200": 36,
+    "total": 146
+  },
+  "parameter_notes": {
+    "dmin3": "Cube of minimum nucleon distance, fm^3",
+    "norm_PbPb2760": "Pb-Pb 2.76 TeV normalization",
+    "norm_AuAu200": "Au-Au 200 GeV normalization"
+  },
+  "paper_prior_differences": {
+    "norm_AuAu200": {
+      "local": [
+        4,
+        9
+      ],
+      "paper_table_I": [
+        3,
+        10
+      ]
+    },
+    "zeta_over_s_max": {
+      "local": [
+        0.01,
+        0.2
+      ],
+      "paper_table_I": [
+        0.01,
+        0.25
+      ]
+    },
+    "Tswitch": {
+      "local": [
+        0.13,
+        0.165
+      ],
+      "paper_table_I": [
+        0.135,
+        0.165
+      ]
+    }
+  },
+  "likelihood_files": {
+    "src/configurations.py": "cf8b8c25edfceaae700ad06a7cbd4c03e0d68aebc66fe6b49f8014647c6d5390",
+    "src/bins_and_cuts.py": "4a2441b5c999b86d9b6b0999af7e363362b8cd09a6b0268c683cda04722193d3",
+    "src/bayes_mcmc.py": "d23eb15adec8711fada88a572b0c5d252cdd151b930c8f4faa797dc096f1adf7",
+    "src/bayes_exp.py": "88b88163bd04b35920138b10bb1fab8815eddd62f23161a82fcd2d3502290dc3",
+    "src/emulator.py": "4f0e64f1f233a1773a57e293bc1ff205d33a42ef366b4332a96106e53a095459",
+    "emulator/emulator-Pb-Pb-2760-idf-0.dill": "6a734874e3733f62ca7db217f770925cd4b97c8d8653f7abe8f08cbb5b4cdcba",
+    "emulator/emulator-Au-Au-200-idf-0.dill": "db922c047e42c9d63efb6c37c3e3ca2cf0aaeaca5ce39e0bcdf5f223b0d83030"
+  },
+  "processing": "Weighted arrays and scores copied in stored row order; no extra burn-in, thinning, clipping or deduplication. The HDF resampled chain is not used."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "Approximate joint KDE reference point in the declared log-coefficient coordinates; not a continuous posterior MAP.",
+  "method": "Gaussian KDE evaluated at sample locations",
+  "density_coordinates": [
+    "AlphaS",
+    "Q0",
+    "ln_c1",
+    "ln_c2",
+    "Tau0",
+    "ln_c3"
+  ],
+  "point": {
+    "AlphaS": 0.4112,
+    "Q0": 1.65262,
+    "ln_c1": -4.51052,
+    "ln_c2": -1.31168,
+    "Tau0": 0.325466,
+    "ln_c3": 3.67332
+  },
+  "precision": "Provided rounded reference values; the bounded example estimate need not reproduce this point.",
+  "sample_archive": "MCMCSamples.txt.bz2",
+  "sample_archive_sha256": "bb636846cefb47bd0faddd3df1c3edb8401fe11e5acda4bdaf9648417b7fa47d"
+}

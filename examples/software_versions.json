@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "description": "JETSCAPE 3.7.1 and the component revisions observed in the tested reference setup",
+  "repositories": [
+    {"path": ".", "url": "https://github.com/JETSCAPE/JETSCAPE.git", "commit": "3546d357141f54056af87f6f535467ed26a1289a"},
+    {"path": "external_packages/music", "url": "https://github.com/MUSIC-fluid/MUSIC.git", "commit": "132448235467999067f1c01f340736139499ce16"},
+    {"path": "external_packages/iSS", "url": "https://github.com/chunshen1987/iSS.git", "commit": "db176d4cfaf804c9963f6927577d540f5f8be530"},
+    {"path": "external_packages/freestream-milne", "url": "https://github.com/chunshen1987/freestream-milne.git", "commit": "e0a21feb48a922b4b4541ab0e4d745c65594bb5f"},
+    {"path": "external_packages/smash/smash_code", "url": "https://github.com/smash-transport/smash.git", "commit": "7eae4eb47f266f3234887aaec992c1715f494862"}
+  ],
+  "external_requirements": ["C++17 compiler", "CMake", "Boost", "GSL", "HDF5", "Pythia8", "zlib"],
+  "tables": "Supply LBT-tables from the matching upstream release; their contents are hashed during preparation. Tables and host libraries are not pinned by the Git commits alone."
+}

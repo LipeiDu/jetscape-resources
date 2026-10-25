@@ -1,0 +1,218 @@
+{
+  "published_source": "https://arxiv.org/html/2011.01430v2#S7.T2",
+  "soft_parameter_mappings": [
+    {
+      "parameter": "norm_AuAu200",
+      "published_Grad": 5.73,
+      "xml_path": "IS/Trento/PhysicsInputs",
+      "attribute": "normalization",
+      "input_value": 5.73
+    },
+    {
+      "parameter": "trento_p",
+      "published_Grad": 0.063,
+      "xml_path": "IS/Trento/TransInputs",
+      "attribute": "reduced-thickness",
+      "input_value": 0.063
+    },
+    {
+      "parameter": "sigma_k",
+      "published_Grad": 1.05,
+      "xml_path": "IS/Trento/TransInputs",
+      "attribute": "fluctuation",
+      "input_value": 0.9070294784580498
+    },
+    {
+      "parameter": "nucleon_width",
+      "published_Grad": 1.12,
+      "xml_path": "IS/Trento/TransInputs",
+      "attribute": "nucleon-width",
+      "input_value": 1.12
+    },
+    {
+      "parameter": "dmin3",
+      "published_Grad": 2.97,
+      "xml_path": "IS/Trento/TransInputs",
+      "attribute": "nucleon-min-dist",
+      "input_value": 1.4374259571188353
+    },
+    {
+      "parameter": "tau_R",
+      "published_Grad": 1.46,
+      "xml_path": "Preequilibrium/FreestreamMilne/TAU_R",
+      "input_value": 1.46
+    },
+    {
+      "parameter": "alpha",
+      "published_Grad": 0.031,
+      "xml_path": "Preequilibrium/FreestreamMilne/ALPHA",
+      "input_value": 0.031
+    },
+    {
+      "parameter": "eta_over_s_T_kink_in_GeV",
+      "published_Grad": 0.223,
+      "xml_path": "Hydro/MUSIC/eta_over_s_T_kink_in_GeV",
+      "input_value": 0.223
+    },
+    {
+      "parameter": "eta_over_s_low_T_slope_in_GeV",
+      "published_Grad": -0.776,
+      "xml_path": "Hydro/MUSIC/eta_over_s_low_T_slope_in_GeV",
+      "input_value": -0.776
+    },
+    {
+      "parameter": "eta_over_s_high_T_slope_in_GeV",
+      "published_Grad": 0.37,
+      "xml_path": "Hydro/MUSIC/eta_over_s_high_T_slope_in_GeV",
+      "input_value": 0.37
+    },
+    {
+      "parameter": "eta_over_s_at_kink",
+      "published_Grad": 0.096,
+      "xml_path": "Hydro/MUSIC/eta_over_s_at_kink",
+      "input_value": 0.096
+    },
+    {
+      "parameter": "zeta_over_s_max",
+      "published_Grad": 0.133,
+      "xml_path": "Hydro/MUSIC/zeta_over_s_max",
+      "input_value": 0.133
+    },
+    {
+      "parameter": "zeta_over_s_T_peak_in_GeV",
+      "published_Grad": 0.12,
+      "xml_path": "Hydro/MUSIC/zeta_over_s_T_peak_in_GeV",
+      "input_value": 0.12
+    },
+    {
+      "parameter": "zeta_over_s_width_in_GeV",
+      "published_Grad": 0.072,
+      "xml_path": "Hydro/MUSIC/zeta_over_s_width_in_GeV",
+      "input_value": 0.072
+    },
+    {
+      "parameter": "zeta_over_s_lambda_asymm",
+      "published_Grad": -0.122,
+      "xml_path": "Hydro/MUSIC/zeta_over_s_lambda_asymm",
+      "input_value": -0.122
+    },
+    {
+      "parameter": "shear_relax_time_factor",
+      "published_Grad": 4.65,
+      "auxiliary_input": "music_input: shear_relax_time_factor",
+      "input_value": 4.65
+    },
+    {
+      "parameter": "Tswitch",
+      "published_Grad": 0.136,
+      "xml_path": "Hydro/MUSIC/freezeout_temperature",
+      "input_value": 0.136
+    }
+  ],
+  "conversions": {
+    "sigma_k": "k=1/sigma_k^2",
+    "dmin3": "dmin=dmin3^(1/3)"
+  },
+  "module_selection": {
+    "soft": [
+      "Trento",
+      "FreestreamMilne",
+      "MUSIC",
+      "iSS",
+      "SMASH"
+    ],
+    "hard": [
+      "Trento",
+      "FreestreamMilne",
+      "MUSIC",
+      "PythiaGun",
+      "Matter",
+      "Lbt",
+      "colorless"
+    ]
+  },
+  "validation_scope": "Input-coordinate and module checks for the supplied examples. See sample_metadata.json for the generated Au-Au demonstration outputs.",
+  "implementation_sources": [
+    "https://github.com/JETSCAPE/JETSCAPE/blob/3546d357141f54056af87f6f535467ed26a1289a/CMakeLists.txt",
+    "https://github.com/JETSCAPE/JETSCAPE/blob/3546d357141f54056af87f6f535467ed26a1289a/src/initialstate/TrentoInitial.cc",
+    "https://github.com/JETSCAPE/JETSCAPE/blob/3546d357141f54056af87f6f535467ed26a1289a/src/hydro/MusicWrapper.cc"
+  ],
+  "hard_parameter_mappings": [
+    {
+      "parameter": "AlphaS",
+      "reference_value": 0.4112,
+      "xml_paths": [
+        "Eloss/Matter/alphas",
+        "Eloss/Lbt/alphas"
+      ],
+      "input_value": 0.4112
+    },
+    {
+      "parameter": "Q0",
+      "reference_value": 1.65262,
+      "unit": "GeV",
+      "xml_paths": [
+        "Eloss/Matter/Q0",
+        "Eloss/Lbt/Q0"
+      ],
+      "input_value": 1.65262
+    },
+    {
+      "parameter": "ln_c1",
+      "reference_value": -4.51052,
+      "xml_paths": [
+        "Eloss/Matter/qhatA"
+      ],
+      "conversion": "exp(ln_c1)",
+      "input_value": 0.010992742463249567
+    },
+    {
+      "parameter": "ln_c2",
+      "reference_value": -1.31168,
+      "xml_paths": [
+        "Eloss/Matter/qhatB"
+      ],
+      "conversion": "exp(ln_c2)",
+      "input_value": 0.26936713924688244
+    },
+    {
+      "parameter": "Tau0",
+      "reference_value": 0.325466,
+      "unit": "fm/c",
+      "xml_paths": [
+        "Eloss/tStart"
+      ],
+      "input_value": 0.325466
+    },
+    {
+      "parameter": "ln_c3",
+      "reference_value": 3.67332,
+      "xml_paths": [
+        "Eloss/Matter/qhatC"
+      ],
+      "conversion": "exp(ln_c3)",
+      "input_value": 39.3824387524629
+    }
+  ],
+  "hard_reference": "../hard/reference_point.json",
+  "collision_settings": [
+    {
+      "system": "Au-Au",
+      "sqrt_s_NN_GeV": 200,
+      "normalization": 5.73,
+      "nn_cross_section_fm2": 4.2
+    },
+    {
+      "system": "Pb-Pb",
+      "sqrt_s_NN_GeV": 2760,
+      "normalization": 14.2,
+      "nn_cross_section_fm2": 6.4
+    },
+    {
+      "system": "Pb-Pb",
+      "sqrt_s_NN_GeV": 5020,
+      "normalization": 18.8,
+      "nn_cross_section_fm2": 7.0
+    }
+  ]
+}

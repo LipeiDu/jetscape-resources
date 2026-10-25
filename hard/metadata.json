@@ -1,0 +1,33 @@
+{
+  "format": "bzip2 compressed whitespace-delimited text, no header",
+  "shape": [
+    250000,
+    6
+  ],
+  "columns": [
+    "AlphaS",
+    "Q0",
+    "ln_c1",
+    "ln_c2",
+    "Tau0",
+    "ln_c3"
+  ],
+  "units": [
+    "dimensionless",
+    "GeV",
+    "dimensionless",
+    "dimensionless",
+    "fm/c",
+    "dimensionless"
+  ],
+  "archive_bytes": 7275857,
+  "archive_sha256": "bb636846cefb47bd0faddd3df1c3edb8401fe11e5acda4bdaf9648417b7fa47d",
+  "uncompressed_bytes": 37895083,
+  "uncompressed_sha256": "17233605ed185ccc2b6d019ca8a06d34949b7e57b6058882086a82e7be839eb6",
+  "rows": "All rows retained, including repeats; equal-weight MCMC representation.",
+  "burn_in_thinning_chain_layout": "Unknown upstream preprocessing and chain/walker layout; no additional burn-in or thinning applied.",
+  "upstream_data_license": "No separate data license is specified in this collection. The helper code license does not assign a license to the sample data; cite the original study.",
+  "study_reference": "https://arxiv.org/abs/2408.08247",
+  "sample_source": "MCMC samples provided by lead authors of R. Ehlers et al. (JETSCAPE), Phys. Rev. C 111, 054913 (2025), arXiv:2408.08247.",
+  "inference_scope": "The exact data selection, preprocessing and original likelihood are not specified by this flattened array."
+}

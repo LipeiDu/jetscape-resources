@@ -1,0 +1,80 @@
+{
+  "format": "JETSCAPE_FINAL_STATE v2, seven columns",
+  "collision_system": "Au-Au",
+  "sqrt_s_NN_GeV": 200,
+  "centrality_percent": [
+    30,
+    40
+  ],
+  "software_versions": "software_versions.json",
+  "scope": "Small particle-list examples illustrating output format, soft hypersurface oversampling and hard hydro reuse.",
+  "samples": {
+    "soft": {
+      "file": "soft_hadrons.dat",
+      "sha256": "f3a8fed39779c2e9a925f8ede040d3d745ce6016483e772da862acbf0f098782",
+      "seed": 261025101,
+      "writer_blocks": 1,
+      "particle_rows": 8197,
+      "status_counts": {
+        "27": 8197
+      },
+      "cross_section_footer": {
+        "sigmaGen_mb": -1.0,
+        "sigmaErr_mb": -1.0
+      },
+      "configuration": "soft_AuAu200.xml",
+      "configuration_sha256": "b6dd755c0a27f23714ea99bf880009e58176acaf0ef7eb06266717f554cd394f",
+      "effective_configuration_sha256": "0d13e3b0a7190bfa3281ab98a448d6e13dc0caca7e0f9db8ee3d43f80018edd1",
+      "independent_hydro_backgrounds": 1,
+      "event_ids": [
+        1
+      ],
+      "particles_per_writer_block": [
+        8197
+      ],
+      "hypersurface_samples": 3,
+      "hadrons_per_afterburner_sample_from_log": [
+        2693,
+        2844,
+        2660
+      ],
+      "layout": "Three particlization/afterburner samples concatenated under event ID 1; individual sample IDs and boundaries are not stored in this ASCII file."
+    },
+    "hard": {
+      "file": "hard_hadrons.dat",
+      "sha256": "783ef65a9e2a742cebdb8efc872e8e6e9159c2699c245e19ff91b16b8a4210d6",
+      "seed": 261025102,
+      "writer_blocks": 3,
+      "particle_rows": 407,
+      "status_counts": {
+        "-1": 137,
+        "0": 270
+      },
+      "cross_section_footer": {
+        "sigmaGen_mb": 7.17165e-05,
+        "sigmaErr_mb": 4.22766e-05
+      },
+      "configuration": "hard_AuAu200.xml",
+      "configuration_sha256": "3b5d1cf096b0bb16e91890ba59782a726e62afc2cc8e8a19b82aa0c2924ece1d",
+      "effective_configuration_sha256": "60d6b9a3e660e313fc01cd12f7b30a21924c0e95fb2430b9feb1d1f5cb7e5028",
+      "independent_hydro_backgrounds": 1,
+      "event_ids": [
+        1,
+        2,
+        3
+      ],
+      "particles_per_writer_block": [
+        194,
+        67,
+        146
+      ],
+      "hydro_reuse_factor": 3,
+      "writer_event_to_hydro_background": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "layout": "Three distinct hard-event IDs share hydro background 0; the grouping is retained here as sidecar metadata."
+    }
+  }
+}

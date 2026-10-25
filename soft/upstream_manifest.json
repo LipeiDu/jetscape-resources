@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/j-f-paquet/js-sims-bayes",
+  "commit": "9c8ffc63cc0f79ddb34d1d91c208b0e4cac9d39e",
+  "posterior_chain": "No tracked chain found in the recursive tree at this commit; supply separately with metadata.",
+  "files": [
+    {
+      "path": "production_designs/design_pts_Pb_Pb_2760_production.zip",
+      "url": "https://raw.githubusercontent.com/j-f-paquet/js-sims-bayes/9c8ffc63cc0f79ddb34d1d91c208b0e4cac9d39e/production_designs/design_pts_Pb_Pb_2760_production.zip",
+      "bytes": 2050253,
+      "sha256": "5c539ed512effee98c8a58e5805c44330ab147c8a8e13bc652fdc90196a76040"
+    },
+    {
+      "path": "model_calculations/production_500pts_Pb_Pb_2760/Obs/main.dat",
+      "url": "https://raw.githubusercontent.com/j-f-paquet/js-sims-bayes/9c8ffc63cc0f79ddb34d1d91c208b0e4cac9d39e/model_calculations/production_500pts_Pb_Pb_2760/Obs/main.dat",
+      "bytes": 3936000,
+      "sha256": "a0c05459155f0ec068aeb29903d1bff0b812263517cb2fcf698d8fb92f1d4e4b"
+    },
+    {
+      "path": "model_calculations/MAP/Grad/Obs/obs_Pb-Pb-2760.dat",
+      "url": "https://raw.githubusercontent.com/j-f-paquet/js-sims-bayes/9c8ffc63cc0f79ddb34d1d91c208b0e4cac9d39e/model_calculations/MAP/Grad/Obs/obs_Pb-Pb-2760.dat",
+      "bytes": 10944,
+      "sha256": "3c713fc32ab0874f77451ae5bce3a12d67e5e7765940ce926c77d3a87d23f407"
+    },
+    {
+      "path": "model_calculations/MAP/Grad/Obs/obs_Au-Au-200.dat",
+      "url": "https://raw.githubusercontent.com/j-f-paquet/js-sims-bayes/9c8ffc63cc0f79ddb34d1d91c208b0e4cac9d39e/model_calculations/MAP/Grad/Obs/obs_Au-Au-200.dat",
+      "bytes": 3072,
+      "sha256": "9f9def01f32a2ccbafffa9986dff5634a3591a3cf59896532b5c7446bb220386"
+    }
+  ]
+}
